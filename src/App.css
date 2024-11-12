@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    overflow-y: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cardDetails {
+    width: 541px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.frontCard {
+    position: absolute;
+    top: 130px;
+    left: 120px;
+    width: 407px;
+    height: 205px;
+    background: url('./images/bg-card-front.png'); 
+    padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.backCard {
+    position: absolute;
+    top: 410px;
+    left: 214px;
+    width: 447px;
+    height: 245px;
+    background: url('./images/bg-card-back.png');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.placeNumber {
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-top: 60px;
 }
+
+.frontCard div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.placeName {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.placeDate {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.placeCVC {
+    font-size: 14px;
+    color: #FFFFFF;
+    position: relative;
+    top: 96.5px;
+    left: 360px;
+}
+
+.formDetails {
+    width: 381px;
+    position: absolute;
+    top: 170px;
+    left: 850px;
+}
+
+form label {
+    display: block;
+    font-size: 12px;
+    color: #21092F;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 381px;
+    height: 45px;
+    border:1.5px solid #DFDEE0;
+    border-radius: 5px;
+}
+
+.formDetails div {
+    margin-bottom: 15px;
+}
+
+form article {
+    display: flex;
+    justify-content: space-between;
+}
+
+form article input {
+    width: 180px;
+}
+
+.btn {
+    border: none;
+    width: 381px;
+    height: 53px;
+    background-color: #21092F;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 480px ) {
+    body {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 500;
+    }
+
+    .bgImage img {
+        width: 100vw;
+    }
+
+    .frontCard {
+        width: 286px;
+        height: 157px;
+        position: absolute;
+        top: 130px;
+        left: 20px;
+        z-index: 20;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .backCard {
+        width: 286px;
+        height: 157px;
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        background-size: contain;
+    }
+
+    .formDetails {
+        position: absolute;
+        top: 350px;
+        left: 15px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
